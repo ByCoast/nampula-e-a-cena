@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-mz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Nampula é a Cena | Notícias, Vagas e Mercado Negro Moçambique</title>
+    <meta name="description" content="Portal oficial de actualidade em Moçambique. Cobertura completa: Daniel Chapo, Banco Mundial, Investimentos, Vagas de Emprego em Nampula e Boladas de Tecnologia Starlink.">
+    <meta name="keywords" content="Nampula é a Cena, Francisco Chapo, Banco Mundial Moçambique,VaGasEmpregoAfungi, Starlink Afrika, Mercado Negro Nampula, Economia Moçambicana Lil wyne Namicop, Notícias Urgentes Moçambique, Constantino Serra Paulo, Portal Nampula Namicopö,Brics Mundial,TikTok, Diario Moz, All IA,Caf AfCON MUNDIAL">
+    <meta name="author" content="Constantino Paulo">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nampula é a Cena - O Teu Portal de Actualidade">
+    <meta property="og:description" content="Últimas notícias, oportunidades de emprego e as melhores boladas de tecnologia em Nampula.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=600">
+    <meta property="og:url" content="https://teusite.github.io/">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root { 
+            --bg: #f8f9fa; 
+            --txt: #1a1a1a; 
+            --card: #ffffff; 
+            --prm: #b22222; 
+            --accent: #0056b3; 
+            --bolada: #f39c12; 
+            --success: #27ae60;
+        }
+
+        /* CONFIGURAÇÕES DARK MODE */
+        [data-theme="dark"] {
+            --bg: #121212;
+            --txt: #ffffff;
+            --card: #1e1e1e;
+            --accent: #3498db;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: 'Segoe UI', Helvetica, Arial, sans-serif; 
+            background: var(--bg); color: var(--txt); line-height: 1.6;
+            display: flex; flex-direction: column; min-height: 100vh;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        header { background: var(--card); padding: 15px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; transition: background 0.3s ease; }
+        .logo { font-weight: 900; color: var(--accent); font-size: 1.1rem; letter-spacing: -0.5px; }
+
+        .barra-alerta { background: #000; color: #ff0; padding: 10px; font-weight: bold; overflow: hidden; white-space: nowrap; font-size: 0.9rem; }
+        .marquee { display: inline-block; animation: scroll 35s linear infinite; }
+        @keyframes scroll { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+
+        #dropdown { display: none; background: var(--card); position: absolute; right: 15px; top: 60px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); border-radius: 8px; z-index: 1001; width: 240px; }
+        #dropdown a { display: block; padding: 15px; text-decoration: none; color: var(--txt); border-bottom: 1px solid #eee; font-weight: 600; }
+
+        .container { max-width: 650px; margin: 20px auto; padding: 0 15px; flex: 1; width: 100%; }
+        .tela { display: none; animation: fadeIn 0.3s ease; }
+        .ativa { display: block; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        .faq-item { background: var(--card); border-radius: 12px; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-left: 6px solid var(--prm); overflow: hidden; }
+        .item-vaga { border-left-color: var(--accent); }
+        .item-bolada { border-left-color: var(--bolada); }
+
+        .faq-header { padding: 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-content { max-height: 0; overflow: hidden; transition: max-height 0.5s ease-out; }
+        .faq-body { padding: 20px; border-top: 1px solid rgba(0,0,0,0.05); }
+        .faq-body img { width: 100%; border-radius: 8px; margin-bottom: 15px; object-fit: cover; }
+        .noticia-texto { font-size: 15px; text-align: justify; line-height: 1.8; white-space: pre-wrap; }
+
+        .vaga-card-link { margin: 20px 0; padding: 15px; border: 2px dashed var(--accent); border-radius: 10px; background: rgba(0,86,179,0.05); text-align: center; }
+        .vaga-btn { display: inline-block; background: var(--accent); color: white; padding: 12px 25px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 10px; }
+
+        .btn-wa { display: flex; align-items: center; justify-content: center; background: #25d366; color: white; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 20px; }
+
+        footer { background: #111; color: #fff; padding: 40px 15px 20px; text-align: center; margin-top: 40px; }
+        .footer-links { margin-bottom: 25px; }
+        .footer-links span { margin: 0 12px; cursor: pointer; text-decoration: underline; font-size: 14px; color: #3498db; }
+        .footer-social a { color: #fff; font-size: 26px; margin: 0 15px; text-decoration: none; }
+        .autor { margin-top: 30px; font-size: 11px; color: #666; border-top: 1px solid #222; padding-top: 20px; }
+        .email-footer { display: block; margin-top: 5px; color: var(--accent); text-transform: lowercase; text-decoration: none; }
+
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 2000; align-items: center; justify-content: center; }
+        .modal-box { background: var(--card); color: var(--txt); padding: 30px; border-radius: 15px; width: 90%; max-width: 450px; text-align: center; }
+    </style>
+</head>
+<body data-theme="light">
+
+    <header>
+        <button onclick="mudarTela('home')" style="border:none; background:none; font-size:24px; cursor:pointer;">🏠</button>
+        
+        <div style="text-align: center;">
+            <div class="logo">NAMPULA É A CENA</div>
+            <div style="font-size: 10px; color: var(--prm); font-weight: bold; letter-spacing: 4px; text-transform: uppercase; margin-top: -4px;">
+                Moçambique
+            </div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <button onclick="toggleDarkMode()" id="dark-btn" style="border:none; background:none; font-size:20px; cursor:pointer;">🌓</button>
+            <button onclick="toggleMenu()" style="border:none; background:none; font-size:24px; cursor:pointer;">☰</button>
+        </div>
+    </header>
+
+    <nav id="dropdown">
+        <a href="#" onclick="mudarTela('home')">🏠 Início</a>
+        <a href="#" onclick="mudarTela('noticias')">📰 Notícias de Moçambique</a>
+        <a href="#" onclick="mudarTela('vagas')">💼 Oportunidades de Emprego</a>
+        <a href="#" onclick="mudarTela('boladas')">🔥 Mercado Negro / Tecnologia</a>
+    </nav>
+
+    <div class="barra-alerta">
+        <div class="marquee" id="txt-marquee">🔴 A carregar as actualidades mais pesquisadas...</div>
+    </div>
+
+    <main class="container">
+        <section id="home" class="tela ativa">
+            <div style="text-align:center; padding: 40px 0;">
+                <h1 style="font-size: 32px; margin-bottom: 10px;">Portal Nampula 🇲🇿</h1>
+                <p style="color: #666; margin-bottom: 40px; font-weight: 500;">Actualidade, Emprego e Tecnologia.</p>
+                
+                <button onclick="mudarTela('noticias')" style="width:100%; padding:20px; background:var(--accent); color:white; border:none; border-radius:12px; margin-bottom:15px; font-weight:bold; font-size: 16px;">📰 ÚLTIMAS NOTÍCIAS</button>
+                <button onclick="mudarTela('vagas')" style="width:100%; padding:20px; background:var(--prm); color:white; border:none; border-radius:12px; margin-bottom:15px; font-weight:bold; font-size: 16px;">💼 VAGAS DE EMPREGO</button>
+                <button onclick="mudarTela('boladas')" style="width:100%; padding:20px; background:var(--bolada); color:white; border:none; border-radius:12px; font-weight:bold; font-size: 16px;">🔥 MERCADO NEGRO</button>
+            </div>
+        </section>
+
+        <section id="noticias" class="tela"><h2 style="margin-bottom:20px;">📰 Actualidade</h2><div id="feed-noticias"></div></section>
+        <section id="vagas" class="tela"><h2 style="margin-bottom:20px;">💼 Oportunidades</h2><div id="feed-vagas"></div></section>
+        <section id="boladas" class="tela"><h2 style="margin-bottom:20px;">🔥 Mercado Negro</h2><div id="feed-boladas"></div></section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <span onclick="abrirModal('sobre')">Sobre</span>
+            <span onclick="abrirModal('suporte')">Suporte & Parcerias</span>
+            <span onclick="abrirModal('privacidade')">Privacidade</span>
+        </div>
+        <div class="footer-social">
+            <a href="https://wa.me/258833812518" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/share/1HAg7JX9UD/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/@TeuCanal" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/constantino-paulo-425124369" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/crishpaulo" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="autor">
+            Autor: Constantino Paulo <br>
+            <a href="mailto:constantinopauloserras@gmail.com" class="email-footer">constantinopauloserras@gmail.com</a>
+            <p style="margin-top: 15px; font-size: 10px; color: #555; letter-spacing: 1px;">
+                &copy; 2026 NAMPULA É A CENA. TODOS OS DIREITOS RESERVADOS.
+            </p>
+        </div>
+    </footer>
+
+    <div id="modal-area" class="modal" onclick="fecharModal()">
+        <div class="modal-box" onclick="event.stopPropagation()">
+            <div id="modal-conteudo"></div>
+            <button onclick="fecharModal()" style="margin-top:25px; width:100%; padding:14px; background:var(--prm); color:white; border:none; border-radius:10px; font-weight:bold;">FECHAR</button>
+        </div>
+    </div>
+
+    <script>
+        // SISTEMA DARK MODE
+        function toggleDarkMode() {
+            const body = document.body;
+            const btn = document.getElementById('dark-btn');
+            if (body.getAttribute('data-theme') === 'dark') {
+                body.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+                btn.innerText = '🌓';
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+                btn.innerText = '☀️';
+            }
+        }
+
+        // CARREGAR TEMA SALVO
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.setAttribute('data-theme', 'dark');
+            document.getElementById('dark-btn').innerText = '☀️';
+        }
+
+        function toggleMenu() {
+            const d = document.getElementById('dropdown');
+            d.style.display = d.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function mudarTela(id) {
+            document.querySelectorAll('.tela').forEach(t => t.classList.remove('ativa'));
+            document.getElementById(id).classList.add('ativa');
+            document.getElementById('dropdown').style.display = 'none';
+            window.scrollTo(0,0);
+        }
+
+        function toggleAcordeao(h) {
+            const c = h.nextElementSibling;
+            c.style.maxHeight = c.style.maxHeight ? null : c.scrollHeight + "px";
+        }
+
+        function abrirModal(tipo) {
+            const c = document.getElementById('modal-conteudo');
+            if(tipo === 'sobre') {
+                c.innerHTML = `<h2>Sobre Nós</h2><p style="margin-top:15px;">Nampula é a Cena é a tua fonte número 1 de informação independente em Moçambique.</p>`;
+            } else if(tipo === 'suporte') {
+                c.innerHTML = `<h2>Suporte & Parcerias</h2><p style="margin-top:15px;">Para anúncios ou ajuda:</p><br><a href="mailto:constantinopauloserras@gmail.com" style="color:var(--accent); font-weight:bold; text-decoration:none;">Enviar E-mail</a><br><br><a href="https://wa.me/258833812518" style="color:green; font-weight:bold; text-decoration:none;">WhatsApp: Click Aqui</a>`;
+            } else {
+                c.innerHTML = `<h2>Privacidade</h2><p style="margin-top:15px;">Os teus dados de navegação estão protegidos.</p>`;
+            }
+            document.getElementById('modal-area').style.display = 'flex';
+        }
+
+        function fecharModal() { document.getElementById('modal-area').style.display = 'none'; }
+
+        async function carregar() {
+            try {
+                const res = await fetch('dados.json');
+                const dados = await res.json();
+                const fNot = document.getElementById('feed-noticias');
+                const fVag = document.getElementById('feed-vagas');
+                const fBol = document.getElementById('feed-boladas');
+                fNot.innerHTML = ""; fVag.innerHTML = ""; fBol.innerHTML = "";
+                let tits = "";
+
+                dados.reverse().forEach(item => {
+                    let cls = item.tipo === 'vaga' ? 'item-vaga' : (item.tipo === 'bolada' ? 'item-bolada' : '');
+                    let cartaoVaga = "";
+                    if(item.tipo === 'vaga' && item.link_vaga) {
+                        cartaoVaga = `<div class="vaga-card-link"><i class="fas fa-file-contract"></i><p>Candidatura disponível</p><a href="${item.link_vaga}" target="_blank" class="vaga-btn">SE INSCREVER NA VAGA</a></div>`;
+                    }
+
+                    const html = `
+                        <article class="faq-item ${cls}">
+                            <div class="faq-header" onclick="toggleAcordeao(this)">
+                                <h4>${item.titulo} <br><small style="font-weight:normal; color:#888; font-size:11px;">${item.data}</small></h4>
+                                <span>▼</span>
+                            </div>
+                            <div class="faq-content">
+                                <div class="faq-body">
+                                    <img src="${item.img}" alt="Imagem" loading="lazy" onerror="this.src='https://via.placeholder.com/600x300'">
+                                    <div class="noticia-texto">${item.desc}</div>
+                                    ${cartaoVaga}
+                                    <a href="https://wa.me/?text=*Nampula é a Cena:* ${encodeURIComponent(item.titulo)}" class="btn-wa">
+                                        <i class="fab fa-whatsapp"></i>&nbsp; PARTILHAR
+                                    </a>
+                                </div>
+                            </div>
+                        </article>`;
+                    if(item.tipo === 'vaga') fVag.innerHTML += html;
+                    else if(item.tipo === 'bolada') fBol.innerHTML += html;
+                    else fNot.innerHTML += html;
+                    tits += item.titulo + " • ";
+                });
+                document.getElementById('txt-marquee').innerText = "🔴 EM DESTAQUE: " + tits;
+            } catch(e) { console.error(e); }
+        }
+        carregar();
+    </script>
+</body>
+</html>
