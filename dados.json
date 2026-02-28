@@ -4,7 +4,8 @@
     "titulo": "ALERTA: Chuvas Intensas em Nampula",
     "desc": "O INGD emitiu um aviso de nível amarelo para a província de Nampula. Recomenda-se precaução máxima nas zonas ribeirinhas e evitar travessias em áreas inundadas durante as próximas 24 horas.",
     "img": "https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?q=80&w=600",
-    "tipo": "noticia"
+    "tipo": "noticia",
+    "categoria": "Sociedade"
   },
   {
     "data": "28/02/2026",
@@ -12,6 +13,7 @@
     "desc": "Empresa sediada na Cidade de Nampula procura técnico com experiência em configuração de redes e manutenção de hardware. Envie o seu CV através do nosso portal oficial.",
     "img": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=600",
     "tipo": "vaga",
+    "categoria": "Tecnologia",
     "link_vaga": "https://exemplo-portal-vagas.co.mz/candidatura"
   },
   {
@@ -20,6 +22,7 @@
     "desc": "Oportunidade para profissionais com experiência em gestão de equipas. Local: Nampula. Clique no botão abaixo para submeter o seu currículo.",
     "img": "https://images.unsplash.com/photo-1521791136064-7986c2959210?q=80&w=600",
     "tipo": "vaga",
+    "categoria": "Recursos Humanos",
     "link_vaga": "mailto:recrutamento@empresa.co.mz?subject=Candidatura_RH"
   },
   {
@@ -27,34 +30,190 @@
     "titulo": "Actual: Kit Starlink Standard (Ger. 3)",
     "desc": "Internet via satélite de alta velocidade já disponível para entrega em Nampula. Kit selado, ideal para empresas e zonas rurais.",
     "img": "https://images.unsplash.com/photo-1621330396173-e41b1cafd17f?q=80&w=600",
-    "tipo": "bolada"
+    "tipo": "bolada",
+    "categoria": "Starlink"
   },
   {
     "data": "28/02/2026",
     "titulo": "Actual: Samsung Galaxy S24 Ultra 5G",
     "desc": "O topo de gama da Samsung com as novas funções de Inteligência Artificial. Ecrã de titânio, câmara de 200MP. Preço de Mercado Negro imbatível.",
     "img": "https://images.unsplash.com/photo-1707150919131-03099956423c?q=80&w=600",
-    "tipo": "bolada"
+    "tipo": "bolada",
+    "categoria": "Smartphones"
   },
   {
     "data": "28/02/2026",
     "titulo": "TECNOLOGIA: Painéis Solares Inteligentes 550W",
     "desc": "Energia renovável para a sua casa em Nampula. Painéis de alta eficiência para reduzir a fatura da EDM. Temos stock em Nampula.",
     "img": "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=600",
-    "tipo": "bolada"
+    "tipo": "bolada",
+    "categoria": "Energia"
   },
   {
     "data": "28/02/2026",
     "titulo": "Chapo e Banco Mundial passam em revista nova parceria de 10 mil milhões de dólares",
-    "desc": "O Presidente da República, Daniel Chapo, recebeu hoje o director executivo do Banco Mundial, Zarau Kibwe.<br><br>O encontro centrou-se no novo Quadro de Parceria 2026-2031, que prevê um apoio de 10 mil milhões de dólares para Moçambique. Foram destacados progressos como a saída da Lista Cinzenta e a operacionalização do Fundo Soberano.",
+    "desc": "O Presidente da República, Daniel Chapo, recebeu hoje o director executivo do Banco Mundial, Zarau Kibwe. O encontro centrou-se no novo Quadro de Parceria 2026-2031, que prevê um apoio de 10 mil milhões de dólares para Moçambique. Foram destacados progressos como a saída da Lista Cinzenta e a operacionalização do Fundo Soberano.",
     "img": "https://i.postimg.cc/xjh0hqR1/Screenshot-20260227-160501-Google.jpg",
-    "tipo": "noticia"
+    "tipo": "noticia",
+    "categoria": "Política"
   },
   {
     "data": "28/02/2026",
     "titulo": "EDUCAÇÃO COMO BASE DA INDEPENDÊNCIA ECONÓMICA MOÇAMBICANA",
-    "desc": "Na cerimónia central de abertura do Ano Lectivo de 2026, reafirmámos que a educação é a base da nossa Independência Económica.<br><br>Defendemos uma escola orientada para formar cidadãos capazes de criar emprego e inovar. #VamosTrabalhar.",
+    "desc": "Na cerimónia central de abertura do Ano Lectivo de 2026, reafirmámos que a educação é a base da nossa Independência Económica. Defendemos uma escola orientada para formar cidadãos capazes de criar emprego e inovar. #VamosTrabalhar.",
     "img": "https://image2url.com/r2/default/images/1772265141761-0cf37cc6-b07b-4665-ba02-663a64f25bd6.jpg",
-    "tipo": "noticia"
+    "tipo": "noticia",
+    "categoria": "Economia"
+  },
+  {
+    "data": "28/02/2026",
+    "titulo": "Ataque em Macomia: Dois paramilitares mortos em confronto",
+    "desc": "Pelo menos dois membros da Força Local foram mortos num ataque atribuído a insurgentes na aldeia V Congresso, em Macomia, Cabo Delgado. As vítimas tentavam socorrer as Forças de Defesa e Segurança no terreno.",
+    "img": "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600",
+    "tipo": "noticia",
+    "categoria": "Segurança"
+  },
+  {
+    "data": "28/02/2026",
+    "titulo": "Governo admite falta de medicamentos e desvio de insumos",
+    "desc": "Ministério da Saúde reconhece 'faltas pontuais' de medicamentos devido a vandalização, cortes de financiamento e desvio por funcionários. Garante, no entanto, que o Sistema Nacional de Saúde não colapsou.",
+    "img": "https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=600",
+    "tipo": "noticia",
+    "categoria": "Saúde"
+  },
+  {
+    "data": "28/02/2026",
+    "titulo": "Dez detidos por desvio de donativos das cheias em Gaza",
+    "desc": "Funcionários públicos, incluindo uma administradora distrital, foram detidos acusados de desviar alimentos, roupas e colchões destinados às vítimas das cheias em Xai-Xai e Chibuto.",
+    "img": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=600",
+    "tipo": "noticia",
+    "categoria": "Corrupção"
+  },
+  {
+    "data": "28/02/2026",
+    "titulo": "Autoridades desconhecem impacto da greve na saúde",
+    "desc": "Governo diz não ter 'noção' se a greve dos profissionais de saúde está a decorrer e rejeita alegação da APSUSM de mais de 700 mortes por falta de assistência, afirmando que a taxa de mortalidade se mantém estável.",
+    "img": "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=600",
+    "tipo": "noticia",
+    "categoria": "Saúde"
+  },
+  {
+    "data": "28/02/2026",
+    "titulo": "Vítimas das cheias preferem não ir aos centros de acolhimento",
+    "desc": "Em Xai-Xai, a maioria dos 15 mil desalojados optou por ficar com familiares. Relatos apontam para condições precárias nos centros, incluindo apenas uma refeição por dia, apesar de o Governo garantir 'condições básicas'.",
+    "img": "https://images.unsplash.com/photo-1547683905-f686c993aae5?q=80&w=600",
+    "tipo": "noticia",
+    "categoria": "Sociedade"
+  },
+  {
+    "data": "28/02/2026",
+    "titulo": "Para onde vão os fundos da resiliência climática?",
+    "desc": "Moçambique recebeu mais de mil milhões de dólares para adaptação climática entre 2012 e 2024. No entanto, especialistas apontam falhas na monitoria, fragmentação institucional e risco de corrupção na aplicação dos fundos.",
+    "img": "https://images.unsplash.com/photo-1562157873-818bc0726f68?q=80&w=600",
+    "tipo": "noticia",
+    "categoria": "Ambiente"
+  },
+  {
+    "data": "28/02/2026",
+    "titulo": "Ferrovia norte-sul: projeto antigo com viabilidade incerta",
+    "desc": "Especialistas questionam a viabilidade económica da ligação ferroviária entre o norte e sul de Moçambique. O projeto não tem financiamento garantido e não consta do Plano Quinquenal do Governo, levantando dúvidas sobre a sua prioridade.",
+    "img": "https://images.unsplash.com/photo-1474487548417-781cb71495f3?q=80&w=600",
+    "tipo": "noticia",
+    "categoria": "Infraestrutura"
+  },
+  {
+    "data": "28/02/2026",
+    "titulo": "VAGA: Motorista Logístico",
+    "desc": "SDO Moçambique procura motorista profissional em Nampula para transporte de pessoal, manutenção básica de viaturas e apoio logístico. Exige carta profissional e mínimo de 4 anos de experiência.",
+    "img": "https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?q=80&w=600",
+    "tipo": "vaga",
+    "categoria": "Logística",
+    "link_vaga": "https://apply.workable.com/j/B8276A84FD/"
+  },
+  {
+    "data": "28/02/2026",
+    "titulo": "VAGA: Senior Manager Site Services",
+    "desc": "A Sasol está a recrutar um gestor sénior para Inhambane (Temane) para liderar serviços de suporte às operações. Requer licenciatura e 12+ anos de experiência. Candidaturas até 12 de Março.",
+    "img": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=600",
+    "tipo": "vaga",
+    "categoria": "Gestão",
+    "link_vaga": "https://jobs.sasol.com/job/Inhambane-Senior-Manager-Site-Services/1368597633/"
+  },
+  {
+    "data": "28/02/2026",
+    "titulo": "VAGA: Técnico Sénior de Saúde e Segurança Ocupacional",
+    "desc": "SDO Moçambique procura profissional em Maputo para liderar sistemas de gestão ISO e garantir conformidade em SST e ambiente. Exige licenciatura, 8 anos de experiência e inglês funcional.",
+    "img": "https://images.unsplash.com/photo-1573497620053-e3a0e9f0a54a?q=80&w=600",
+    "tipo": "vaga",
+    "categoria": "Saúde e Segurança",
+    "link_vaga": "https://apply.workable.com/j/FCE985464A/"
+  },
+  {
+    "data": "28/02/2026",
+    "titulo": "VAGA: Energy Adviser (m/f)",
+    "desc": "A GIZ, através do programa EnDev, recruta um assessor de energia em Maputo para o setor de cozinha limpa. Exige formação superior, 5 anos de experiência e inglês fluente. Candidatura (CV + carta) num único ficheiro até 13 de Março.",
+    "img": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=600",
+    "tipo": "vaga",
+    "categoria": "Energia",
+    "link_vaga": "https://apply.workable.com/j/53710C0E1B/"
+  },
+  {
+    "data": "28/02/2026",
+    "titulo": "VAGA: Diretor Comercial",
+    "desc": "KFC International, Lda recruta Diretor Comercial em Maputo. Exige licenciatura, 7 anos de experiência e fluência em inglês e hindi. Envie CV até 01 de Março.",
+    "img": "https://images.unsplash.com/photo-1554774853-aae0a22c8aa4?q=80&w=600",
+    "tipo": "vaga",
+    "categoria": "Comercial",
+    "link_vaga": "mailto:kakumanuv@kecrpg.com?subject=Candidatura_Diretor_Comercial"
+  },
+  {
+    "data": "28/02/2026",
+    "titulo": "VAGA: Diretor Geral",
+    "desc": "KFC International, Lda recruta Diretor Geral em Maputo. Exige licenciatura/mestrado, 7 anos em direção e fluência em inglês e hindi. Envie CV até 01 de Março.",
+    "img": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600",
+    "tipo": "vaga",
+    "categoria": "Gestão",
+    "link_vaga": "mailto:kakumanuv@kecrpg.com?subject=Candidatura_Diretor_Geral"
+  },
+  {
+    "data": "28/02/2026",
+    "titulo": "VAGA: Engenheiro de Minas",
+    "desc": "Mota-Engil recruta Engenheiro de Minas para a Direção de Produção em Maputo. Exige formação superior, 5 anos de experiência em mina de ouro a céu aberto e domínio de software como Vulcan, Surpac e AutoCAD.",
+    "img": "https://images.unsplash.com/photo-1560193788-91e5b52ab4cf?q=80&w=600",
+    "tipo": "vaga",
+    "categoria": "Engenharia",
+    "link_vaga": "https://careers.mota-engil.com/job/Maputo-Engenheiroa-de-Minas-Dire%C3%A7%C3%A3o-de-Produ%C3%A7%C3%A3o-%28PT%29-T/1367903433/"
+  },
+  {
+    "data": "28/02/2026",
+    "titulo": "Como a IA está a transformar a educação em África",
+    "desc": "Especialistas reunidos no Gana debatem o potencial da inteligência artificial para revolucionar a aprendizagem no continente. Projetos como o Chorkor Digital Lab ensinam competências digitais a jovens, mas há alertas para riscos de exclusão digital e necessidade de políticas que garantam uma IA com valores africanos.",
+    "img": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=600",
+    "tipo": "noticia",
+    "categoria": "Tecnologia"
+  },
+  {
+    "data": "28/02/2026",
+    "titulo": "Moçambique terá primeira fábrica nacional de telemóveis",
+    "desc": "A Moz-Sure anunciou a construção de uma fábrica no Parque Industrial de Beluluane para produzir telemóveis 'made in Moçambique'. Com investimento de 3 milhões de dólares, o projeto prevê criar 160 empregos diretos e produzir até 300 mil unidades por mês, reduzindo a dependência de importações.",
+    "img": "https://images.unsplash.com/photo-1468495244123-6c6c332eeece?q=80&w=600",
+    "tipo": "noticia",
+    "categoria": "Economia"
+  },
+  {
+    "data": "28/02/2026",
+    "titulo": "Como a inteligência artificial impacta o jornalismo?",
+    "desc": "Evento da Academia DW em Berlim reuniu especialistas globais para debater os desafios da IA no jornalismo. Temas incluíram desinformação, deepfakes, negociação com big techs e a necessidade de regulamentação. A conclusão: a IA deve ser aliada, não substituta, do fator humano nas redações.",
+    "img": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=600",
+    "tipo": "noticia",
+    "categoria": "Média"
+  },
+  {
+    "data": "28/02/2026",
+    "titulo": "Europa troca direitos humanos por minerais na cimeira com África",
+    "desc": "ONG angolanas acusam a União Europeia de ter priorizado acesso a recursos naturais (minerais, energia) em detrimento de direitos humanos e democracia durante a 7.ª Cimeira UA-UE em Luanda. Denúncias apontam para 'relativização' de violações em troca de negócios e influência económica.",
+    "img": "https://images.unsplash.com/photo-1574889385113-8e1c9bb48017?q=80&w=600",
+    "tipo": "noticia",
+    "categoria": "Política"
   }
 ]
