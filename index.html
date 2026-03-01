@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-mz">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Nampula é a Cena | Notícias, Vagas e Mercado Negro</title>
-    
-    <meta name="description" content="Portal oficial de actualidade em Moçambique. Cobertura completa: Política, Vagas de Emprego em Nampula e Mercado Negro.">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Constantino Paulo">
-    <link rel="canonical" href="https://bycoast.github.io/nampula-e-a-cena/">
+  <title>Nampula é a Cena | Notícias, Vagas e Mercado Negro</title>
 
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://bycoast.github.io/nampula-e-a-cena/">
-    <meta property="og:title" content="Nampula é a Cena | Notícias e Vagas">
-    <meta property="og:description" content="O maior portal de oportunidades e actualidade da província de Nampula.">
-    <meta property="og:image" content="https://bycoast.github.io/nampula-e-a-cena/logo.png">
+  <meta name="description" content="Portal oficial de actualidade em Moçambique. Cobertura completa: Política, Vagas de Emprego em Nampula e Mercado Negro.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Constantino Paulo">
+  <link rel="canonical" href="https://bycoast.github.io/nampula-e-a-cena/">
 
-    <script type="application/ld+json">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bycoast.github.io/nampula-e-a-cena/">
+  <meta property="og:title" content="Nampula é a Cena | Notícias e Vagas">
+  <meta property="og:description" content="O maior portal de oportunidades e actualidade da província de Nampula.">
+  <meta property="og:image" content="https://bycoast.github.io/nampula-e-a-cena/logo.png">
+
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "NewsMediaOrganization",
@@ -35,287 +35,560 @@
         "addressCountry": "MZ"
       }
     }
-    </script>
+  </script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <style>
-        :root { 
-            --bg: #f8f9fa; --txt: #1a1a1a; --card: #ffffff;
-            --prm: #b22222; --accent: #0056b3; --bolada: #f39c12; --success: #27ae60;
-        }
-        [data-theme="dark"] { --bg: #121212; --txt: #ffffff; --card: #1e1e1e; --accent: #3498db; }
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--txt); transition: 0.3s; display: flex; flex-direction: column; min-height: 100vh; }
+  <style>
+:root {
+    --bg: #f8f9fa;
+    --txt: #1a1a1a;
+    --card: #ffffff;
+    --prm: #b22222;
+    --accent: #0056b3;
+    --bolada: #f39c12;
+    --success: #27ae60;
+  }
+    [data-theme="dark"] {
+      --bg: #121212;
+      --txt: #ffffff;
+      --card: #1e1e1e;
+      --accent: #3498db;
+    }
 
-        header { background: var(--card); padding: 15px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
-        .logo { font-weight: 900; color: var(--accent); font-size: 1.1rem; text-align: center; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--txt);
+      transition: 0.3s;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
-        .barra-alerta { background: #000; color: #ff0; padding: 10px; font-weight: bold; overflow: hidden; white-space: nowrap; font-size: 0.9rem; }
-        .marquee { display: inline-block; animation: scroll 35s linear infinite; }
-        @keyframes scroll { 0% { transform: translateX(100vw); } 100% { transform: translateX(-100%); } }
+    header {
+      background: var(--card);
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo {
+      font-weight: 900;
+      color: var(--accent);
+      font-size: 1.1rem;
+      text-align: center;
+    }
 
-        .container { max-width: 650px; margin: 20px auto; padding: 0 15px; flex: 1; width: 100%; }
-        .tela { display: none; animation: fadeIn 0.3s; }
-        .ativa { display: block; }
-        @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    .barra-alerta {
+      background: #000;
+      color: #ff0;
+      padding: 10px;
+      font-weight: bold;
+      overflow: hidden;
+      white-space: nowrap;
+      font-size: 0.9rem;
+    }
+    .marquee {
+      display: inline-block;
+      animation: scroll 35s linear infinite;
+    }
+@keyframes scroll {
+      0% {
+        transform: translateX(100vw);
+      }
 
-        .filtros { display: flex; gap: 8px; overflow-x: auto; padding: 10px 0; margin-bottom: 15px; scrollbar-width: none; }
-        .filtros::-webkit-scrollbar { display: none; }
-        .btn-f { background: var(--card); border: 1px solid #ddd; padding: 6px 15px; border-radius: 20px; cursor: pointer; color: var(--txt); font-weight: bold; font-size: 12px; white-space: nowrap; }
-        .btn-f.active { background: var(--accent); color: #fff; border-color: var(--accent); }
-        .btn-voltar { background: transparent; border: 1px solid #ccc; color: var(--txt); padding: 8px 15px; border-radius: 8px; font-weight: bold; cursor: pointer; margin-bottom: 10px; display: inline-flex; align-items: center; gap: 8px; }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
 
-        .skeleton { background: #eee; background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%); background-size: 200% 100%; animation: shine 1.5s linear infinite; border-radius: 12px; height: 100px; margin-bottom: 20px; }
-        @keyframes shine { to { background-position-x: -200%; } }
+    .container {
+      max-width: 650px;
+      margin: 20px auto;
+      padding: 0 15px;
+      flex: 1;
+      width: 100%;
+    }
+    .tela {
+      display: none;
+      animation: fadeIn0.3s;
+    }
+    .ativa {
+      display: block;
+    }
+@keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
 
-        .faq-item { background: var(--card); border-radius: 12px; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-left: 6px solid var(--prm); overflow: hidden; }
-        .item-vaga { border-left-color: var(--accent); }
-        .item-bolada { border-left-color: var(--bolada); }
-        .faq-header { padding: 20px; cursor: pointer; display: flex; justify-content: space-between; }
-        .faq-content { max-height: 0; overflow: hidden; transition: 0.5s ease-out; }
-        .faq-body { padding: 20px; border-top: 1px solid rgba(0,0,0,0.05); }
-        .faq-body img { width: 100%; border-radius: 8px; margin-bottom: 15px; object-fit: cover; }
-        
-        .btn-wa { display: flex; align-items: center; justify-content: center; background: #25d366; color: white; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 15px; }
+      to {
+        opacity: 1;
+      }
+    }
 
-        .email-box { background: var(--card); padding: 20px; border-radius: 12px; margin-top: 30px; border: 1px solid #ddd; text-align: center; }
-        .email-input { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; margin: 10px 0; outline: none; }
+    .filtros {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 10px 0;
+      margin-bottom: 15px;
+      scrollbar-width: none;
+    }
+    .filtros::-webkit-scrollbar {
+      display: none;
+    }
+    .btn-f {
+      background: var(--card);
+      border: 1px solid #ddd;
+      padding: 6px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      color: var(--txt);
+      font-weight: bold;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    .btn-f.active {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+    .btn-voltar {
+      background: transparent;
+      border: 1px solid #ccc;
+      color: var(--txt);
+      padding: 8px 15px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
 
-        #dropdown { display: none; background: var(--card); position: absolute; right: 15px; top: 60px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); border-radius: 8px; width: 240px; z-index: 1001; }
-        #dropdown a { display: block; padding: 15px; text-decoration: none; color: var(--txt); border-bottom: 1px solid #eee; font-weight: bold; }
-        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 2000; align-items: center; justify-content: center; padding: 20px; }
-        .modal-box { background: var(--card); padding: 25px; border-radius: 15px; width: 100%; max-width: 400px; text-align: center; }
+    .skeleton {
+      background: #eee;
+      background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+      background-size: 200% 100%;
+      animation: shine1.5s linear infinite;
+      border-radius: 12px;
+      height: 100px;
+      margin-bottom: 20px;
+    }
+@keyframes shine {
+      to {
+        background-position-x: -200%;
+      }
+    }
 
-        footer { background: #111; color: #fff; padding: 40px 15px 20px; text-align: center; margin-top: auto; }
-        .footer-links span { margin: 0 10px; color: var(--accent); cursor: pointer; font-size: 14px; text-decoration: underline; }
-        .footer-social a { color: #fff; font-size: 24px; margin: 0 15px; text-decoration: none; }
-    </style>
+    .faq-item {
+      background: var(--card);
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      border-left: 6px solid var(--prm);
+      overflow: hidden;
+    }
+    .item-vaga {
+      border-left-color: var(--accent);
+    }
+    .item-bolada {
+      border-left-color: var(--bolada);
+    }
+    .faq-header {
+      padding: 20px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+    }
+    .faq-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.5s ease-out;
+    }
+    .faq-body {
+      padding: 20px;
+      border-top: 1px solid rgba(0,0,0,0.05);
+    }
+    .faq-body img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    .btn-wa {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #25d366;
+      color: white;
+      padding: 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .email-box {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 30px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    .email-input {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin: 10px 0;
+      outline: none;
+    }
+
+    #dropdown {
+      display: none;
+      background: var(--card);
+      position: absolute;
+      right: 15px;
+      top: 60px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      border-radius: 8px;
+      width: 240px;
+      z-index: 1001;
+    }
+    #dropdown a {
+      display: block;
+      padding: 15px;
+      text-decoration: none;
+      color: var(--txt);
+      border-bottom: 1px solid #eee;
+      font-weight: bold;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      z-index: 2000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal-box {
+      background: var(--card);
+      padding: 25px;
+      border-radius: 15px;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      padding: 40px 15px 20px;
+      text-align: center;
+      margin-top: auto;
+    }
+    .footer-links span {
+      margin: 0 10px;
+      color: var(--accent);
+      cursor: pointer;
+      font-size: 14px;
+      text-decoration: underline;
+    }
+    .footer-social a {
+      color: #fff;
+      font-size: 24px;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body data-theme="light">
 
-    <header>
-        <button onclick="mudarTela('home')" style="border:none; background:none; font-size:24px; cursor:pointer;">🏠</button>
-        <div class="logo">NAMPULA É A CENA<div style="font-size: 10px; color: var(--prm); letter-spacing: 3px; margin-top:-2px;">MOÇAMBIQUE</div></div>
-        <div style="display: flex; gap: 15px;">
-            <button onclick="toggleDarkMode()" id="dark-btn" style="border:none; background:none; font-size:20px; cursor:pointer;">🌓</button>
-            <button onclick="toggleMenu()" style="border:none; background:none; font-size:24px; cursor:pointer;">☰</button>
-        </div>
-    </header>
-
-    <nav id="dropdown">
-        <a href="#" onclick="mudarTela('home')">🏠 Início</a>
-        <a href="#" onclick="mudarTela('noticias')">📰 Notícias</a>
-        <a href="#" onclick="mudarTela('vagas')">💼 Vagas</a>
-        <a href="#" onclick="mudarTela('boladas')">🔥 Mercado Negro</a>
-    </nav>
-
-    <div class="barra-alerta"><div class="marquee" id="txt-marquee">🔴 A conectar aos servidores de Nampula...</div></div>
-
-    <main class="container">
-        <section id="home" class="tela ativa">
-            <div style="text-align:center; padding: 20px 0;">
-                <h1 style="font-size: 28px; margin-bottom: 5px;">Portal Nampula 🇲🇿</h1>
-                <p style="color: #666; margin-bottom: 30px; font-weight: 500;">A tua fonte diária de informação.</p>
-                
-                <button onclick="mudarTela('noticias')" style="width:100%; padding:20px; background:var(--accent); color:white; border:none; border-radius:12px; margin-bottom:15px; font-weight:bold; font-size: 16px; cursor:pointer;">📰 NOTÍCIAS</button>
-                <button onclick="mudarTela('vagas')" style="width:100%; padding:20px; background:var(--prm); color:white; border:none; border-radius:12px; margin-bottom:15px; font-weight:bold; font-size: 16px; cursor:pointer;">💼 VAGAS DE EMPREGO</button>
-                <button onclick="mudarTela('boladas')" style="width:100%; padding:20px; background:var(--bolada); color:white; border:none; border-radius:12px; font-weight:bold; font-size: 16px; cursor:pointer;">🔥 MERCADO NEGRO</button>
-                
-                <div class="email-box">
-                    <h3 style="font-size: 16px; margin-bottom: 5px;">Receber alertas no E-mail</h3>
-                    <p style="font-size: 13px; color: #666;">Vagas e notícias urgentes.</p>
-                    <input type="email" id="email-user" class="email-input" placeholder="O teu e-mail...">
-                    <button onclick="subscreverEmail()" style="background:var(--success); color:white; border:none; padding:12px 20px; width:100%; border-radius:8px; font-weight:bold; cursor:pointer;">Subscrever Grátis</button>
-                </div>
-            </div>
-        </section>
-
-        <section id="noticias" class="tela">
-            <button class="btn-voltar" onclick="mudarTela('home')"><i class="fas fa-arrow-left"></i> Voltar ao Início</button>
-            <h2 style="margin: 10px 0;">📰 Actualidade</h2>
-            <div class="filtros" id="filtros-noticia"></div>
-            <div id="feed-noticia"><div class="skeleton"></div><div class="skeleton"></div></div>
-        </section>
-
-        <section id="vagas" class="tela">
-            <button class="btn-voltar" onclick="mudarTela('home')"><i class="fas fa-arrow-left"></i> Voltar ao Início</button>
-            <h2 style="margin: 10px 0;">💼 Vagas</h2>
-            <div class="filtros" id="filtros-vaga"></div>
-            <div id="feed-vaga"><div class="skeleton"></div></div>
-        </section>
-
-        <section id="boladas" class="tela">
-            <button class="btn-voltar" onclick="mudarTela('home')"><i class="fas fa-arrow-left"></i> Voltar ao Início</button>
-            <h2 style="margin: 10px 0;">🔥 Mercado Negro</h2>
-            <div class="filtros" id="filtros-bolada"></div>
-            <div id="feed-bolada"><div class="skeleton"></div></div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-links">
-            <span onclick="abrirModal('sobre')">Sobre Nós</span>
-            <span onclick="abrirModal('privacidade')">Política</span>
-            <span onclick="abrirModal('suporte')">Contactos & Suporte</span>
-        </div>
-        <div class="footer-social" style="margin-top:25px;">
-            <a href="https://wa.me/258833812518" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.facebook.com/share/1HAg7JX9UD/" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.linkedin.com/in/constantino-paulo-425124369" target="_blank"><i class="fab fa-linkedin"></i></a>
-        </div>
-        <div style="margin-top: 25px; font-size: 11px; color: #666; border-top: 1px solid #333; padding-top: 15px;">
-            Autor: Constantino Paulo <br> &copy; 2026 NAMPULA É A CENA. TODOS OS DIREITOS RESERVADOS.
-        </div>
-    </footer>
-
-    <div id="modal-area" class="modal" onclick="fecharModal()">
-        <div class="modal-box" onclick="event.stopPropagation()">
-            <div id="modal-conteudo"></div>
-            <button onclick="fecharModal()" style="margin-top:20px; width:100%; padding:12px; background:var(--prm); color:white; border:none; border-radius:8px; font-weight:bold; cursor:pointer;">FECHAR</button>
-        </div>
+  <header>
+    <button onclick="mudarTela('home')" style="border:none; background:none; font-size:24px; cursor:pointer;">🏠</button>
+    <div class="logo">
+      NAMPULA É A CENA<div style="font-size: 10px; color: var(--prm); letter-spacing: 3px; margin-top:-2px;">
+        MOÇAMBIQUE
+      </div>
     </div>
+    <div style="display: flex; gap: 15px;">
+      <button onclick="toggleDarkMode()" id="dark-btn" style="border:none; background:none; font-size:20px; cursor:pointer;">🌓</button>
+      <button onclick="toggleMenu()" style="border:none; background:none; font-size:24px; cursor:pointer;">☰</button>
+    </div>
+  </header>
 
-    <script>
-        let dadosBase = [];
+  <nav id="dropdown">
+    <a href="#" onclick="mudarTela('home')">🏠 Início</a>
+    <a href="#" onclick="mudarTela('noticias')">📰 Notícias</a>
+    <a href="#" onclick="mudarTela('vagas')">💼 Vagas</a>
+    <a href="#" onclick="mudarTela('boladas')">🔥 Mercado Negro</a>
+  </nav>
 
-        function toggleDarkMode() {
-            const b = document.body;
-            const btn = document.getElementById('dark-btn');
-            const theme = b.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-            b.setAttribute('data-theme', theme);
-            localStorage.setItem('theme', theme);
-            btn.innerText = theme === 'dark' ? '☀️' : '🌓';
-        }
-        if (localStorage.getItem('theme') === 'dark') {
-            document.body.setAttribute('data-theme', 'dark');
-            document.getElementById('dark-btn').innerText = '☀️';
-        }
+  <div class="barra-alerta">
+    <div class="marquee" id="txt-marquee">
+      🔴 A conectar aos servidores de Nampula...
+    </div>
+  </div>
 
-        function toggleMenu() {
-            const d = document.getElementById('dropdown');
-            d.style.display = d.style.display === 'block' ? 'none' : 'block';
-        }
+  <main class="container">
+    <section id="home" class="tela ativa">
+      <div style="text-align:center; padding: 20px 0;">
+        <h1 style="font-size: 28px; margin-bottom: 5px;">Portal Nampula 🇲🇿</h1>
+        <p style="color: #666; margin-bottom: 30px; font-weight: 500;">
+          A tua fonte diária de informação.
+        </p>
 
-        function mudarTela(id) {
-            document.querySelectorAll('.tela').forEach(t => t.classList.remove('ativa'));
-            document.getElementById(id).classList.add('ativa');
-            document.getElementById('dropdown').style.display = 'none';
-            window.scrollTo(0,0);
-        }
+        <button onclick="mudarTela('noticias')" style="width:100%; padding:20px; background:var(--accent); color:white; border:none; border-radius:12px; margin-bottom:15px; font-weight:bold; font-size: 16px; cursor:pointer;">📰 NOTÍCIAS</button>
+        <button onclick="mudarTela('vagas')" style="width:100%; padding:20px; background:var(--prm); color:white; border:none; border-radius:12px; margin-bottom:15px; font-weight:bold; font-size: 16px; cursor:pointer;">💼 VAGAS DE EMPREGO</button>
+        <button onclick="mudarTela('boladas')" style="width:100%; padding:20px; background:var(--bolada); color:white; border:none; border-radius:12px; font-weight:bold; font-size: 16px; cursor:pointer;">🔥 MERCADO NEGRO</button>
 
-        function toggleAcordeao(h) {
-            const c = h.nextElementSibling;
-            c.style.maxHeight = c.style.maxHeight ? null : c.scrollHeight + "px";
-        }
+        <div class="email-box">
+          <h3 style="font-size: 16px; margin-bottom: 5px;">Receber alertas no E-mail</h3>
+          <p style="font-size: 13px; color: #666;">
+            Vagas e notícias urgentes.
+          </p>
+          <input type="email" id="email-user" class="email-input" placeholder="O teu e-mail...">
+          <button onclick="subscreverEmail()" style="background:var(--success); color:white; border:none; padding:12px 20px; width:100%; border-radius:8px; font-weight:bold; cursor:pointer;">Subscrever Grátis</button>
+        </div>
+      </div>
+    </section>
 
-        function subscreverEmail() {
-            const email = document.getElementById('email-user').value;
-            if(email.includes('@')) {
-                alert('Obrigado! O email ' + email + ' foi registado com sucesso para receber alertas.');
-                document.getElementById('email-user').value = '';
-            } else {
-                alert('Por favor, insere um e-mail válido.');
-            }
-        }
+    <section id="noticias" class="tela">
+      <button class="btn-voltar" onclick="mudarTela('home')"><i class="fas fa-arrow-left"></i> Voltar ao Início</button>
+      <h2 style="margin: 10px 0;">📰 Actualidade</h2>
+      <div class="filtros" id="filtros-noticia"></div>
+      <div id="feed-noticia">
+        <div class="skeleton"></div>
+        <div class="skeleton"></div>
+      </div>
+    </section>
 
-        function abrirModal(tipo) {
-            const c = document.getElementById('modal-conteudo');
-            if(tipo === 'sobre') {
-                c.innerHTML = `<h2 style="color:var(--accent); margin-bottom:10px;">Sobre Nós</h2><p style="text-align:justify; font-size:14px;">Nampula é a Cena é a principal plataforma digital dedicada à província de Nampula. O nosso foco é partilhar notícias reais, oportunidades de emprego verificadas e negócios de tecnologia de forma rápida e acessível para todos os moçambicanos.</p>`;
-            } else if(tipo === 'privacidade') {
-                c.innerHTML = `<h2 style="color:var(--prm); margin-bottom:10px;">Política de Privacidade</h2><p style="text-align:justify; font-size:14px;">Nós não recolhemos os teus dados de navegação sem permissão. Qualquer e-mail fornecido para subscrição é mantido em segurança e nunca partilhado com terceiros. Ao usar o portal, aceitas os nossos termos básicos de respeito e partilha de informação.</p>`;
-            } else if(tipo === 'suporte') {
-                c.innerHTML = `<h2 style="margin-bottom:10px;">Suporte Técnico</h2><p style="font-size:14px; margin-bottom:15px;">Precisas de divulgar um anúncio ou reportar um erro?</p>
-                <button onclick="mandarEmailSeguro()" style="background:var(--accent); color:white; border:none; padding:10px 15px; border-radius:5px; width:100%; cursor:pointer; font-weight:bold; margin-bottom:10px;"><i class="fas fa-envelope"></i> Enviar E-mail à Equipa</button>
-                <a href="https://wa.me/258833812518" style="display:block; background:#25d366; color:white; text-decoration:none; padding:10px 15px; border-radius:5px; font-weight:bold;"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>`;
-            }
-            document.getElementById('modal-area').style.display = 'flex';
-        }
+    <section id="vagas" class="tela">
+      <button class="btn-voltar" onclick="mudarTela('home')"><i class="fas fa-arrow-left"></i> Voltar ao Início</button>
+      <h2 style="margin: 10px 0;">💼 Vagas</h2>
+      <div class="filtros" id="filtros-vaga"></div>
+      <div id="feed-vaga">
+        <div class="skeleton"></div>
+      </div>
+    </section>
 
-        function mandarEmailSeguro() {
-            const user = "constantinopauloserras";
-            const domain = "gmail.com";
-            window.location.href = "mailto:" + user + "@" + domain + "?subject=Suporte Portal Nampula";
-        }
+    <section id="boladas" class="tela">
+      <button class="btn-voltar" onclick="mudarTela('home')"><i class="fas fa-arrow-left"></i> Voltar ao Início</button>
+      <h2 style="margin: 10px 0;">🔥 Mercado Negro</h2>
+      <div class="filtros" id="filtros-bolada"></div>
+      <div id="feed-bolada">
+        <div class="skeleton"></div>
+      </div>
+    </section>
+  </main>
 
-        function fecharModal() { document.getElementById('modal-area').style.display = 'none'; }
+  <footer>
+    <div class="footer-links">
+      <span onclick="abrirModal('sobre')">Sobre Nós</span>
+      <span onclick="abrirModal('privacidade')">Política</span>
+      <span onclick="abrirModal('suporte')">Contactos & Suporte</span>
+    </div>
+    <div class="footer-social" style="margin-top:25px;">
+      <a href="https://wa.me/258833812518" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.facebook.com/share/1HAg7JX9UD/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/constantino-paulo-425124369" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <br><br><h3 style="color: var(--prm); margin-bottom: 25px;">Nampula é a Cena</h3>
+    <div style="margin-bottom: 25px;">
 
-        function filtrar(tipo, categoria, btn) {
-            const botoes = btn.parentElement.querySelectorAll('.btn-f');
-            botoes.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            const filtrados = dadosBase.filter(i => i.tipo === tipo && (categoria === 'Tudo' || i.categoria === categoria));
-            renderizarSecao(tipo, filtrados);
-        }
+    </div>
+    <p style="font-size: 14px; color: #555; max-width: 500px; margin: 0 auto 20px auto; line-height: 1.5;">
+      O maior portal de actualidade, oportunidades e classificados da província de Nampula. Informação rápida e verificada.
+    </p>
 
-        async function carregar() {
-            try {
-                const res = await fetch('dados.json');
-                dadosBase = await res.json();
-                const catNoticias = [...new Set(dadosBase.filter(i => i.tipo === 'noticia' && i.categoria).map(i => i.categoria))];
-                const catVagas = [...new Set(dadosBase.filter(i => i.tipo === 'vaga' && i.categoria).map(i => i.categoria))];
-                const catBoladas = [...new Set(dadosBase.filter(i => i.tipo === 'bolada' && i.categoria).map(i => i.categoria))];
-                const categorias = { noticia: catNoticias, vaga: catVagas, bolada: catBoladas };
-                ['noticia', 'vaga', 'bolada'].forEach(tipo => {
-                    const container = document.getElementById(`filtros-${tipo}`);
-                    container.innerHTML = `<button class="btn-f active" onclick="filtrar('${tipo}', 'Tudo', this)">Tudo</button>`;
-                    categorias[tipo].forEach(cat => {
-                        container.innerHTML += `<button class="btn-f" onclick="filtrar('${tipo}', '${cat}', this)">${cat}</button>`;
-                    });
-                    renderizarSecao(tipo, dadosBase.filter(i => i.tipo === tipo));
-                });
-                const titulos = dadosBase.slice(-4).reverse().map(i => i.titulo).join(" &nbsp; 🔴 &nbsp; ");
-                document.getElementById('txt-marquee').innerHTML = "🔥 ÚLTIMA HORA: &nbsp; " + titulos;
-            } catch(e) { 
-                console.error("Erro ao carregar dados", e);
-                document.getElementById('txt-marquee').innerText = "⚠️ Erro ao ligar ao servidor. Verifica a internet.";
-            }
-        }
+    <div style="margin-bottom: 25px;">
+      <a href="https://wa.me/258833812518?text=Olá!%20Vi%20o%20portal%20Nampula%20é%20a%20Cena%20e%20gostaria%20de..." target="_blank"
+        style="text-decoration: none; color: var(--accent); font-weight: bold; border: 1px solid var(--accent); padding: 8px 15px; border-radius: 20px; font-size: 13px;">
+        <i class="fas fa-envelope"></i> CONTACTAR REDACÇÃO
+      </a>
 
-        function renderizarSecao(tipo, lista) {
-            const feed = document.getElementById(`feed-${tipo}`);
-            feed.innerHTML = "";
-            if(lista.length === 0) {
-                feed.innerHTML = "<p style='text-align:center; padding:20px; color:#888;'>Nenhuma publicação encontrada nesta categoria.</p>";
-                return;
-            }
-            lista.slice().reverse().forEach(item => {
-                let cls = item.tipo === 'vaga' ? 'item-vaga' : (item.tipo === 'bolada' ? 'item-bolada' : '');
-                const html = `
-                    <article class="faq-item ${cls}">
-                        <div class="faq-header" onclick="toggleAcordeao(this)">
-                            <h4 style="font-size:15px; line-height:1.4;">${item.titulo}<br><small style="color:#888; font-size:11px; font-weight:normal;">${item.data} • ${item.categoria || ''}</small></h4>
-                            <span style="color:var(--accent);">▼</span>
-                        </div>
-                        <div class="faq-content">
-                            <div class="faq-body">
-                                <img src="${item.img}" loading="lazy" onerror="this.src='https://via.placeholder.com/600x300?text=Sem+Imagem'">
-                                <div style="font-size:14px; text-align:justify; line-height:1.6; white-space:pre-wrap;">${item.desc}</div>
-                                ${item.link_vaga ? `<a href="${item.link_vaga}" target="_blank" style="display:block; background:var(--accent); color:white; text-align:center; padding:12px; margin-top:15px; text-decoration:none; border-radius:6px; font-weight:bold;">CANDIDATAR AGORA</a>` : ''}
-                                <a href="https://wa.me/?text=*Vê isto no Nampula é a Cena:* ${encodeURIComponent(item.titulo)}" class="btn-wa">
-                                    <i class="fab fa-whatsapp"></i>&nbsp; PARTILHAR
-                                </a>
-                            </div>
-                        </div>
-                    </article>`;
-                feed.innerHTML += html;
-            });
-        }
-        carregar();
-    // Bloquear clique direito
-    document.addEventListener('contextmenu', event => event.preventDefault());
+    </div>
+    <div
+      style="font-size: 12px; color: #888; line-height: 1.8;">
+      <span><i class="fas fa-map-marker-alt"></i> Nampula, Moçambique</span><br>
+      <span>&copy; 2026 Nampula é a Cena. Todos os direitos reservados.</span>
+    </div>
+  </div>
+</footer>
 
-    // Bloquear atalhos de inspeção (F12, Ctrl+Shift+I, Ctrl+U)
-    document.onkeydown = function(e) {
-        if (e.keyCode == 123 || 
-            (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) || 
-            (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))) {
-            return false;
-        }
-    };
+<div id="modal-area" class="modal" onclick="fecharModal()">
+  <div class="modal-box" onclick="event.stopPropagation()">
+    <div id="modal-conteudo"></div>
+    <button onclick="fecharModal()" style="margin-top:20px; width:100%; padding:12px; background:var(--prm); color:white; border:none; border-radius:8px; font-weight:bold; cursor:pointer;">FECHAR</button>
+  </div>
+</div>
+
+<script>
+  let dadosBase = [];
+
+  function toggleDarkMode() {
+    const b = document.body;
+    const btn = document.getElementById('dark-btn');
+    const theme = b.getAttribute('data-theme') === 'dark' ? 'light': 'dark';
+    b.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    btn.innerText = theme === 'dark' ? '☀️': '🌓';
+  }
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.setAttribute('data-theme', 'dark');
+    document.getElementById('dark-btn').innerText = '☀️';
+  }
+
+  function toggleMenu() {
+    const d = document.getElementById('dropdown');
+    d.style.display = d.style.display === 'block' ? 'none': 'block';
+  }
+
+  function mudarTela(id) {
+    document.querySelectorAll('.tela').forEach(t => t.classList.remove('ativa'));
+    document.getElementById(id).classList.add('ativa');
+    document.getElementById('dropdown').style.display = 'none';
+    window.scrollTo(0, 0);
+  }
+
+  function toggleAcordeao(h) {
+    const c = h.nextElementSibling;
+    c.style.maxHeight = c.style.maxHeight ? null: c.scrollHeight + "px";
+  }
+
+  function subscreverEmail() {
+    const email = document.getElementById('email-user').value;
+    if (email.includes('@')) {
+      alert('Obrigado! O email ' + email + ' foi registado com sucesso para receber alertas.');
+      document.getElementById('email-user').value = '';
+    } else {
+      alert('Por favor, insere um e-mail válido.');
+    }
+  }
+
+  function abrirModal(tipo) {
+    const c = document.getElementById('modal-conteudo');
+    if (tipo === 'sobre') {
+      c.innerHTML = `<h2 style="color:var(--accent); margin-bottom:10px;">Sobre Nós</h2><p style="text-align:justify; font-size:14px;">Nampula é a Cena é a principal plataforma digital dedicada à província de Nampula. O nosso foco é partilhar notícias reais, oportunidades de emprego verificadas e negócios de tecnologia de forma rápida e acessível para todos os moçambicanos.</p>`;
+    } else if (tipo === 'privacidade') {
+      c.innerHTML = `<h2 style="color:var(--prm); margin-bottom:10px;">Política de Privacidade</h2><p style="text-align:justify; font-size:14px;">Nós não recolhemos os teus dados de navegação sem permissão. Qualquer e-mail fornecido para subscrição é mantido em segurança e nunca partilhado com terceiros. Ao usar o portal, aceitas os nossos termos básicos de respeito e partilha de informação.</p>`;
+    } else if (tipo === 'suporte') {
+      c.innerHTML = `<h2 style="margin-bottom:10px;">Suporte Técnico</h2><p style="font-size:14px; margin-bottom:15px;">Precisas de divulgar um anúncio ou reportar um erro?</p>
+      <button onclick="mandarEmailSeguro()" style="background:var(--accent); color:white; border:none; padding:10px 15px; border-radius:5px; width:100%; cursor:pointer; font-weight:bold; margin-bottom:10px;"><i class="fas fa-envelope"></i> Enviar E-mail à Equipa</button>
+      <a href="https://wa.me/258833812518" style="display:block; background:#25d366; color:white; text-decoration:none; padding:10px 15px; border-radius:5px; font-weight:bold;"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>`;
+    }
+    document.getElementById('modal-area').style.display = 'flex';
+  }
+
+  function mandarEmailSeguro() {
+    const user = "constantinopauloserras";
+    const domain = "gmail.com";
+    window.location.href = "mailto:" + user + "@" + domain + "?subject=Suporte Portal Nampula";
+  }
+
+  function fecharModal() {
+    document.getElementById('modal-area').style.display = 'none';
+  }
+
+  function filtrar(tipo, categoria, btn) {
+    const botoes = btn.parentElement.querySelectorAll('.btn-f');
+    botoes.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filtrados = dadosBase.filter(i => i.tipo === tipo && (categoria === 'Tudo' || i.categoria === categoria));
+    renderizarSecao(tipo, filtrados);
+  }
+
+  async function carregar() {
+    try {
+      const res = await fetch('dados.json');
+      dadosBase = await res.json();
+      const catNoticias = [...new Set(dadosBase.filter(i => i.tipo === 'noticia' && i.categoria).map(i => i.categoria))];
+      const catVagas = [...new Set(dadosBase.filter(i => i.tipo === 'vaga' && i.categoria).map(i => i.categoria))];
+      const catBoladas = [...new Set(dadosBase.filter(i => i.tipo === 'bolada' && i.categoria).map(i => i.categoria))];
+      const categorias = {
+        noticia: catNoticias,
+        vaga: catVagas,
+        bolada: catBoladas
+      };
+      ['noticia',
+        'vaga',
+        'bolada'].forEach(tipo => {
+          const container = document.getElementById(`filtros-${tipo}`);
+          container.innerHTML = `<button class="btn-f active" onclick="filtrar('${tipo}', 'Tudo', this)">Tudo</button>`;
+          categorias[tipo].forEach(cat => {
+            container.innerHTML += `<button class="btn-f" onclick="filtrar('${tipo}', '${cat}', this)">${cat}</button>`;
+          });
+          renderizarSecao(tipo, dadosBase.filter(i => i.tipo === tipo));
+        });
+      const titulos = dadosBase.slice(-4).reverse().map(i => i.titulo).join(" &nbsp; 🔴 &nbsp; ");
+      document.getElementById('txt-marquee').innerHTML = "🔥 ÚLTIMA HORA: &nbsp; " + titulos;
+    } catch(e) {
+      console.error("Erro ao carregar dados", e);
+      document.getElementById('txt-marquee').innerText = "⚠️ Erro ao ligar ao servidor. Verifica a internet.";
+    }
+  }
+
+  function renderizarSecao(tipo, lista) {
+    const feed = document.getElementById(`feed-${tipo}`);
+    feed.innerHTML = "";
+    if (lista.length === 0) {
+      feed.innerHTML = "<p style='text-align:center; padding:20px; color:#888;'>Nenhuma publicação encontrada nesta categoria.</p>";
+      return;
+    }
+    lista.slice().reverse().forEach(item => {
+      let cls = item.tipo === 'vaga' ? 'item-vaga': (item.tipo === 'bolada' ? 'item-bolada': '');
+      const html = `
+      <article class="faq-item ${cls}">
+      <div class="faq-header" onclick="toggleAcordeao(this)">
+      <h4 style="font-size:15px; line-height:1.4;">${item.titulo}<br><small style="color:#888; font-size:11px; font-weight:normal;">${item.data} • ${item.categoria || ''}</small></h4>
+      <span style="color:var(--accent);">▼</span>
+      </div>
+      <div class="faq-content">
+      <div class="faq-body">
+      <img src="${item.img}" loading="lazy" onerror="this.src='https://via.placeholder.com/600x300?text=Sem+Imagem'">
+      <div style="font-size:14px; text-align:justify; line-height:1.6; white-space:pre-wrap;">${item.desc}</div>
+      ${item.link_vaga ? `<a href="${item.link_vaga}" target="_blank" style="display:block; background:var(--accent); color:white; text-align:center; padding:12px; margin-top:15px; text-decoration:none; border-radius:6px; font-weight:bold;">CANDIDATAR AGORA</a>`: ''}
+      <a href="https://wa.me/?text=*Vê isto no Nampula é a Cena:* ${encodeURIComponent(item.titulo)}" class="btn-wa">
+      <i class="fab fa-whatsapp"></i>&nbsp; PARTILHAR
+      </a>
+      </div>
+      </div>
+      </article>`;
+      feed.innerHTML += html;
+    });
+  }
+  carregar();
+  // Bloquear clique direito
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
+  // Bloquear atalhos de inspeção (F12, Ctrl+Shift+I, Ctrl+U)
+  document.onkeydown = function(e) {
+    if (e.keyCode == 123 ||
+      (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) ||
+      (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))) {
+      return false;
+    }
+  };
 </script>
-    </script>
+</script>
 </body>
 </html>
