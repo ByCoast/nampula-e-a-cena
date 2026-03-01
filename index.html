@@ -8,12 +8,32 @@
     <title>Nampula é a Cena | Notícias, Vagas e Mercado Negro</title>
     
     <meta name="description" content="Portal oficial de actualidade em Moçambique. Cobertura completa: Política, Vagas de Emprego em Nampula e Mercado Negro.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Constantino Paulo">
+    <link rel="canonical" href="https://bycoast.github.io/nampula-e-a-cena/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bycoast.github.io/nampula-e-a-cena/">
+    <meta property="og:title" content="Nampula é a Cena | Notícias e Vagas">
+    <meta property="og:description" content="O maior portal de oportunidades e actualidade da província de Nampula.">
+    <meta property="og:image" content="https://bycoast.github.io/nampula-e-a-cena/logo.png">
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "NewsMediaOrganization",
       "name": "Nampula é a Cena",
-      "url": "https://bycoast.github.io/nampula-e-a-cena/"
+      "url": "https://bycoast.github.io/nampula-e-a-cena/",
+      "logo": "https://bycoast.github.io/nampula-e-a-cena/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/share/1HAg7JX9UD/",
+        "https://www.linkedin.com/in/constantino-paulo-425124369"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nampula",
+        "addressCountry": "MZ"
+      }
     }
     </script>
 
@@ -21,7 +41,7 @@
     
     <style>
         :root { 
-            --bg: #f8f9fa; --txt: #1a1a1a; --card: #ffffff; 
+            --bg: #f8f9fa; --txt: #1a1a1a; --card: #ffffff;
             --prm: #b22222; --accent: #0056b3; --bolada: #f39c12; --success: #27ae60;
         }
         [data-theme="dark"] { --bg: #121212; --txt: #ffffff; --card: #1e1e1e; --accent: #3498db; }
@@ -32,7 +52,6 @@
         header { background: var(--card); padding: 15px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
         .logo { font-weight: 900; color: var(--accent); font-size: 1.1rem; text-align: center; }
 
-        /* LOOP DE ACTUALIZAÇÕES (MARQUEE) */
         .barra-alerta { background: #000; color: #ff0; padding: 10px; font-weight: bold; overflow: hidden; white-space: nowrap; font-size: 0.9rem; }
         .marquee { display: inline-block; animation: scroll 35s linear infinite; }
         @keyframes scroll { 0% { transform: translateX(100vw); } 100% { transform: translateX(-100%); } }
@@ -42,18 +61,15 @@
         .ativa { display: block; }
         @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
-        /* FILTROS DISCRETOS E BOTÃO VOLTAR */
         .filtros { display: flex; gap: 8px; overflow-x: auto; padding: 10px 0; margin-bottom: 15px; scrollbar-width: none; }
         .filtros::-webkit-scrollbar { display: none; }
         .btn-f { background: var(--card); border: 1px solid #ddd; padding: 6px 15px; border-radius: 20px; cursor: pointer; color: var(--txt); font-weight: bold; font-size: 12px; white-space: nowrap; }
         .btn-f.active { background: var(--accent); color: #fff; border-color: var(--accent); }
         .btn-voltar { background: transparent; border: 1px solid #ccc; color: var(--txt); padding: 8px 15px; border-radius: 8px; font-weight: bold; cursor: pointer; margin-bottom: 10px; display: inline-flex; align-items: center; gap: 8px; }
 
-        /* SKELETON SCREEN */
         .skeleton { background: #eee; background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%); background-size: 200% 100%; animation: shine 1.5s linear infinite; border-radius: 12px; height: 100px; margin-bottom: 20px; }
         @keyframes shine { to { background-position-x: -200%; } }
 
-        /* CARDS */
         .faq-item { background: var(--card); border-radius: 12px; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-left: 6px solid var(--prm); overflow: hidden; }
         .item-vaga { border-left-color: var(--accent); }
         .item-bolada { border-left-color: var(--bolada); }
@@ -64,11 +80,9 @@
         
         .btn-wa { display: flex; align-items: center; justify-content: center; background: #25d366; color: white; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 15px; }
 
-        /* INSCRIÇÃO E-MAIL */
         .email-box { background: var(--card); padding: 20px; border-radius: 12px; margin-top: 30px; border: 1px solid #ddd; text-align: center; }
         .email-input { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; margin: 10px 0; outline: none; }
 
-        /* DROPDOWN & MODAL */
         #dropdown { display: none; background: var(--card); position: absolute; right: 15px; top: 60px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); border-radius: 8px; width: 240px; z-index: 1001; }
         #dropdown a { display: block; padding: 15px; text-decoration: none; color: var(--txt); border-bottom: 1px solid #eee; font-weight: bold; }
         .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 2000; align-items: center; justify-content: center; padding: 20px; }
@@ -166,7 +180,6 @@
     <script>
         let dadosBase = [];
 
-        // DARK MODE
         function toggleDarkMode() {
             const b = document.body;
             const btn = document.getElementById('dark-btn');
@@ -180,7 +193,6 @@
             document.getElementById('dark-btn').innerText = '☀️';
         }
 
-        // MENU E NAVEGAÇÃO
         function toggleMenu() {
             const d = document.getElementById('dropdown');
             d.style.display = d.style.display === 'block' ? 'none' : 'block';
@@ -198,7 +210,6 @@
             c.style.maxHeight = c.style.maxHeight ? null : c.scrollHeight + "px";
         }
 
-        // SIMULAR INSCRIÇÃO E-MAIL
         function subscreverEmail() {
             const email = document.getElementById('email-user').value;
             if(email.includes('@')) {
@@ -209,7 +220,6 @@
             }
         }
 
-        // MODAIS COM EMAIL ESCONDIDO (ANTI-SPAM BOT)
         function abrirModal(tipo) {
             const c = document.getElementById('modal-conteudo');
             if(tipo === 'sobre') {
@@ -225,7 +235,6 @@
         }
 
         function mandarEmailSeguro() {
-            // Email montado aqui para evitar que robôs roubem o endereço no código fonte
             const user = "constantinopauloserras";
             const domain = "gmail.com";
             window.location.href = "mailto:" + user + "@" + domain + "?subject=Suporte Portal Nampula";
@@ -233,12 +242,10 @@
 
         function fecharModal() { document.getElementById('modal-area').style.display = 'none'; }
 
-        // FILTROS E CARREGAMENTO DE DADOS
         function filtrar(tipo, categoria, btn) {
             const botoes = btn.parentElement.querySelectorAll('.btn-f');
             botoes.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-            
             const filtrados = dadosBase.filter(i => i.tipo === tipo && (categoria === 'Tudo' || i.categoria === categoria));
             renderizarSecao(tipo, filtrados);
         }
@@ -247,14 +254,10 @@
             try {
                 const res = await fetch('dados.json');
                 dadosBase = await res.json();
-                
-                // Extrair categorias únicas do JSON
                 const catNoticias = [...new Set(dadosBase.filter(i => i.tipo === 'noticia' && i.categoria).map(i => i.categoria))];
                 const catVagas = [...new Set(dadosBase.filter(i => i.tipo === 'vaga' && i.categoria).map(i => i.categoria))];
                 const catBoladas = [...new Set(dadosBase.filter(i => i.tipo === 'bolada' && i.categoria).map(i => i.categoria))];
-
                 const categorias = { noticia: catNoticias, vaga: catVagas, bolada: catBoladas };
-                
                 ['noticia', 'vaga', 'bolada'].forEach(tipo => {
                     const container = document.getElementById(`filtros-${tipo}`);
                     container.innerHTML = `<button class="btn-f active" onclick="filtrar('${tipo}', 'Tudo', this)">Tudo</button>`;
@@ -263,29 +266,23 @@
                     });
                     renderizarSecao(tipo, dadosBase.filter(i => i.tipo === tipo));
                 });
-
-                // LOOP DE ACTUALIZAÇÕES NO CABEÇALHO (Últimas 4 notícias/vagas)
                 const titulos = dadosBase.slice(-4).reverse().map(i => i.titulo).join(" &nbsp; 🔴 &nbsp; ");
                 document.getElementById('txt-marquee').innerHTML = "🔥 ÚLTIMA HORA: &nbsp; " + titulos;
-
             } catch(e) { 
-                console.error("Erro ao carregar dados", e); 
+                console.error("Erro ao carregar dados", e);
                 document.getElementById('txt-marquee').innerText = "⚠️ Erro ao ligar ao servidor. Verifica a internet.";
             }
         }
 
         function renderizarSecao(tipo, lista) {
             const feed = document.getElementById(`feed-${tipo}`);
-            feed.innerHTML = ""; // Limpa os Skeletons
-            
+            feed.innerHTML = "";
             if(lista.length === 0) {
                 feed.innerHTML = "<p style='text-align:center; padding:20px; color:#888;'>Nenhuma publicação encontrada nesta categoria.</p>";
                 return;
             }
-
             lista.slice().reverse().forEach(item => {
                 let cls = item.tipo === 'vaga' ? 'item-vaga' : (item.tipo === 'bolada' ? 'item-bolada' : '');
-                
                 const html = `
                     <article class="faq-item ${cls}">
                         <div class="faq-header" onclick="toggleAcordeao(this)">
@@ -296,9 +293,7 @@
                             <div class="faq-body">
                                 <img src="${item.img}" loading="lazy" onerror="this.src='https://via.placeholder.com/600x300?text=Sem+Imagem'">
                                 <div style="font-size:14px; text-align:justify; line-height:1.6; white-space:pre-wrap;">${item.desc}</div>
-                                
                                 ${item.link_vaga ? `<a href="${item.link_vaga}" target="_blank" style="display:block; background:var(--accent); color:white; text-align:center; padding:12px; margin-top:15px; text-decoration:none; border-radius:6px; font-weight:bold;">CANDIDATAR AGORA</a>` : ''}
-                                
                                 <a href="https://wa.me/?text=*Vê isto no Nampula é a Cena:* ${encodeURIComponent(item.titulo)}" class="btn-wa">
                                     <i class="fab fa-whatsapp"></i>&nbsp; PARTILHAR
                                 </a>
@@ -308,8 +303,19 @@
                 feed.innerHTML += html;
             });
         }
-
         carregar();
+    // Bloquear clique direito
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    // Bloquear atalhos de inspeção (F12, Ctrl+Shift+I, Ctrl+U)
+    document.onkeydown = function(e) {
+        if (e.keyCode == 123 || 
+            (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) || 
+            (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))) {
+            return false;
+        }
+    };
+</script>
     </script>
 </body>
 </html>
